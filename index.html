@@ -117,7 +117,7 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiArgaJkJQHDmPQ0T4lpyPmO9-p4vuYynmzRxJpgQuULZMCvcvJpu4ssGrPcIPv7IxmNBWtwfxGxY0qvZFAqwTSTYQ6qsot-8fMbbL7U3FFLh9fzweEOgEeFFixx7cxD_or4cC7aSix3fysngJv2IbpLJJOOF5vEBN8gEFMsQiweewzxm2P5etdnTbv3JM/s1152/1000076884.png');
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgG2GC4X5xUZkCVbHX8jdMlrtjTUI27gpxQq1sGS5DpmssUgVzXsqoUMFIcHNZvxmfiRITiIXQJWdSbaV3We_SUNk1ggFxJVzH_CvQOENSiwivlDw-RuOlszZrg-gPihMrlUWa7nnCBVWD5rGTLnxXjMF8xu_QD84di-ghAkTVT6HUBc4JoHo4ttWYOHHM/s1376/1000079421.png');
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -611,7 +611,6 @@ Style: Warm, professional.`
         const sendBtn = document.getElementById("sendBtn");
         const endSessionBtn = document.getElementById("endSessionBtn");
 
-        // تصفية وحجب الحروف الصينية والسيريلية بدقة تامة من ردود البوت
         function filterBotResponse(text) {
             if (!text) return "";
             return text.replace(/[\u0400-\u04FF\u4E00-\u9FFF\u3400-\u4DBF\u3040-\u309F\u30A0-\u30FF\uAC00-\uD7AF]/g, '').trim();
@@ -811,7 +810,6 @@ Style: Warm, professional.`
             document.getElementById("contact").scrollIntoView();
         });
 
-        /* تم تعديل الدالة وإصلاح مشكلة الانعكاس البرمجي لتعمل بسلاسة تامة وتغلق الشاشة فوراً عند الضغط على ✕ */
         function toggleChat() {
             if (chatPopup.style.display === "flex") {
                 chatPopup.style.display = "none";
